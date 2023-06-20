@@ -1,0 +1,24 @@
+@charset "uft-8";
+
+body {
+    background-image: linear-gradient(to bottom, #000000 60%, #242a30 95%);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: #a09587;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    color: #ffebcd;
+    font-size: 2em;
+}
+
+p, ul {
+    color: #f0f0e2;
+    font-size: 1.1em;
+    font-weight: 500;
+}

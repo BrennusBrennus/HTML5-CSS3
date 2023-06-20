@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos</title>
+    <style>
+        p::first-letter {
+            color: red;
+            font-size: 3em;
+        }
+
+        p::first-line {
+            color: blue;
+            font-size: 1.5em;
+        }
+
+        a::before {
+            content: '[link]';
+        }  
+        
+        a::after {
+            content: '[pareidolia]';            
+        }
+
+        li::marker {
+            color: red;
+        }
+        
+        h1::selection {
+            color: yellow;
+            background-color: rgba(221, 13, 13, 0.37);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="fl">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati a unde facere tempore illo id maiores
+        provident dolorum atque. Aut vel non esse cupiditate ipsa. Optio obcaecati eveniet ab. Quis. ipsum dolor sit
+        amet consectetur adipisicing elit. Eius, illum?
+    </p>
+    <a href="https://youtube.com">Youtube</a>
+    <ul>
+        <li>ARROZ DOCE</li>
+    </ul>
+    <h1>Esse texto tem estilos especiais quando selecionado</h1>
+
+</body>
+
+</html>

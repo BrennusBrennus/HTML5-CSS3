@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: lightgrey;
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.493)
+        }
+
+        nav>a:hover {
+            color: blueviolet;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgrey;
+        }
+
+        article>h2 {
+            font-size: 4em;
+        }
+
+        article>p::first-letter {
+            color: darkgreen;
+            font-size: 3em;
+        }
+
+        article>aside {
+            background-color: lightslategray;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+
+        footer>p>a {
+            color: white;
+            text-decoration: none;
+        }
+
+        div#bola {
+            background-color: aliceblue;
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            border-radius: 50px;
+            box-shadow: inset 10px 10px 10px 20px rgba(218, 121, 209, 0.459);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translatey(0);
+            }
+
+            50% {
+                transform: translatey(-25px);
+            }
+
+            100% {
+                transform: translatey(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Feijoada com Tomate</h1>
+        <nav>
+            <a href="https://youtube.com" target="_blank" rel="external">Feijoada</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>
+                Fátima Akita Lourdes
+            </p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum placeat quas earum voluptates
+                    recusandae ad aperiam aliquam modi quaerat atque, ducimus commodi itaque. Inventore quia ipsum porro
+                    sit. Necessitatibus!
+                </p>
+                <aside>
+                    <p>
+                        Artigo escrito por José Farofa
+                    </p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Desenvolvido por <a href="https://twitter.com/brennus_brennus" target="_blank"
+                rel="external">Brennus_Brennus</a>
+        </p>
+    </footer>
+    <div id="bola"></div>
+</body>
+
+</html>
