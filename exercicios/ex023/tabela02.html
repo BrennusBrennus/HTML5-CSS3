@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        table {
+            width: 550px;
+            border-collapse: collapse;
+        }
+        
+        thead, tfoot {
+            background-color: lightslategray;
+        }
+        
+        th {
+            text-align: center;
+            border: 1px solid black;
+            padding: 9px;
+        }
+
+        tbody>tr:nth-child(odd) /*2n-1*/ {
+            background-color: rgb(204, 225, 232);
+        }
+
+        tbody>tr:nth-child(even) /*2n*/ {
+            background-color: lightgray;
+        }
+
+        td {
+            text-align: left;
+            border: 1px solid black;
+            padding: 9px;
+        }
+        .num {
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: darkgreen;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>uso de tabelas grandes (a minha é pequena)</h1>
+    <!--anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH-->
+     
+    <table>
+        <caption>
+            Cidades que penso em morar e suas populações
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Cidade</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="https://cidades.ibge.gov.br/brasil/pr/curitiba/panorama" target="_blank">Curitiba</a>
+                </td>
+                <td class="num">1.773.733</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://cidades.ibge.gov.br/brasil/pr/florianopolis/panorama" target="_blank">Florianópolis</a>
+                </td>
+                <td class="num">537.213</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://cidades.ibge.gov.br/brasil/pr/montes-claros/panorama" target="_blank">Montes Claros</a>
+                </td>
+                <td class="num">414.240</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://cidades.ibge.gov.br/brasil/pr/canela/panorama" target="_blank">Canela</a>
+                </td>
+                <td class="num">48.946</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://cidades.ibge.gov.br/brasil/pr/gramado/panorama" target="_blank">Gramado</a>
+                </td>
+                <td class="num">40.134</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td  class="num">
+                    <strong>2.814.256</strong>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
