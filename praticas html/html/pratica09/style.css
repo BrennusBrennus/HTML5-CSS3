@@ -1,0 +1,41 @@
+@charset "uft-8";
+
+table.tab1 {
+    border-collapse: separate;
+    width: 450px;
+    height: 350px;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+table.tab2 {
+    border-collapse: separate;
+    width: 500px;
+    height: 150px;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+table.tab3 {
+    border-collapse: separate;
+    width: 300px;
+    height: 400px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+table.tab3 td:hover {
+    background-color: tomato;
+    color: blue;
+}

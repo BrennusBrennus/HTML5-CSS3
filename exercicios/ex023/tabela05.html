@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 9px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+        }
+
+        .destaque {
+            background-color: beige;
+        }
+        
+        colgroup>col:nth-child(2n) {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="destaque">
+            <col class="destaque">
+            <col class="destaque">
+            <col class="destaque">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Joana</td>
+            <td>23</td>
+            <td>Fem</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Jorge</td>
+            <td>20</td>
+            <td>Mas</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>30</td>
+            <td>Mas</td>
+            <td>Motorista</td>
+        </tr>
+        <tr>
+            <td>Felipa</td>
+            <td>19</td>
+            <td>Fem</td>
+            <td>Maquiadora</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>47</td>
+            <td>Fem</td>
+            <td>Costureira</td>
+        </tr>
+    </table>
+</body>
+</html>
