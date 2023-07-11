@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form05.css">
+</head>
+
+<body>
+    <h1> exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset class="gen">
+
+            <legend>Gênero</legend>
+
+            <input type="radio" name="gen" id="imas">
+            <label for="gen">Masculino</label> <br>
+
+            <input type="radio" name="gen" id="ifem">
+            <label for="gen">Feminino</label> <br>
+
+            <input type="radio" name="gen" id="ihec">
+            <label for="gen"> Helicóptero</label> <br>
+
+            <input type="radio" name="gen" id="igel">
+            <label for="gen">Geladeira</label> <br>
+
+            <input type="radio" name="gen" id="iqueer">
+            <label for="gen">Queer</label> <br>
+        </fieldset> <br>
+        <fieldset class="filme">
+
+            <legend>Filmes favoritos</legend>
+
+            <input type="checkbox" name="bat" id="ibat">
+            <label for="ibat">Batman</label> <br>
+
+            <input type="checkbox" name="car" id="icar">
+            <label for="icar">Carros</label> <br>
+
+            <input type="checkbox" name="sup" id="isup">
+            <label for="isup">Superman</label> <br>
+
+            <input type="checkbox" name="thor" id="ithor">
+            <label for="ithor">Thor</label> <br>
+
+            <input type="checkbox" name="vin" id="ivin"></input>
+            <label for="ivin">Vingadores</label> <br>
+
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+
+</body>
+
+</html>

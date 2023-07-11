@@ -1,0 +1,39 @@
+
+
+@charset "utf-8";
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(255, 255, 0, 0.208);
+}
+
+fieldset.gen {
+    background-image: linear-gradient(to right, rgb(255, 0, 0), orange, yellow, green, rgb(94, 94, 255), blue, violet);
+}
+
+fieldset.filme {
+    background-color: rgba(255, 0, 0, 0.327);
+}
+
+fieldset>label {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+fieldset {
+    border-radius: 30px;
+}
+
+legend {
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+:checked {
+    color: red;
+}
