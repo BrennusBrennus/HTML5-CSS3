@@ -7,9 +7,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="../mq05/imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media.css">
 </head>
-<body>
+<body onresize="mudou()">
     <header>
+        <h1>Segundo Concílio de Nicéia</h1>
         <i id="burg" class="material-icons" onclick="clickMenu()">menu</i>
         <menu id="itens">
             <ul>
@@ -23,15 +25,24 @@
     </header>
     <main>
         <article>
-            <h2>Testando</h2>
+            <h2>II Concílio de NICÉIA (7º ecumênico) 24 set. – 23 Out. 787
+            </h2>
+            <h4>"Graças às iniciativas da imperatriz Irene, o iconoclasmo, que no império bizantino tinha sido fomentado já por Leão III desde o ano 726, lentamente foi repelido; e neste concílio foi solenemente declarada a doutrina da Igreja sobre as imagens sagradas"</h4>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, hic esse aspernatur porro cupiditate quasi dolores nihil. Dolore quaerat doloribus tenetur dignissimos expedita unde officia molestiae ullam nulla. Facilis est harum molestiae magnam recusandae itaque cupiditate repellat veniam? Officia exercitationem expedita unde sed soluta quibusdam adipisci optio quidem officiis, autem reprehenderit. Ipsa sit placeat voluptatibus minima provident magni veritatis beatae vero quaerat nostrum accusantium praesentium dolores consequatur laborum atque, odio dicta iste facilis error. Nulla corporis hic quas perferendis quam vero, sed quaerat cumque, aut provident quos minus nesciunt similique adipisci? Hic enim suscipit amet eum dignissimos, obcaecati porro fugit!
+                600.   … Como que prosseguindo sobre a via régia, seguindo a doutrina divinamente inspirada pelos nossos santos Padres e a tradição da Igreja católica – pois reconhecemos que ela é do Espírito Santo que a habita –, nós definimos com todo o rigor e cuidado que, à semelhança da figura da cruz preciosa e vivificante, assim as venerandas e santas imagens, quer pintadas, quer em mosaico ou em qualquer outro material adequado, devem ser expostas nas santas igrejas de Deus, sobre os sagrados utensílios e paramentos, sobre as paredes e painéis, nas casas e nas ruas; tanto a imagem do Senhor Deus e Salvador nosso Jesus Cristo como a da Imaculada nossa Senhora, a santa Deípara, dos venerandos anjos e de todos os santos e justos
+
             </p>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, doloribus. Perferendis quisquam eius optio laudantium alias omnis tenetur adipisci nemo eligendi sint, exercitationem dicta unde quasi nostrum nesciunt voluptatibus animi aperiam suscipit impedit sit voluptates accusamus ex! Doloribus in sint earum velit quas cum odio quod beatae autem suscipit ipsum modi quasi quae harum odit, assumenda eum impedit error perferendis soluta at! Dolores sint id, at iusto reiciendis dolorum vitae!
+                601.	De fato, quanto mais são contemplados na imagem que os reproduz, tanto mais os que contemplam as são levados à recordação e ao desejo dos modelos originais e a tributar a elas, beijando-as, respeito e veneração; não, é claro, a verdadeira adoração própria de nossa fé, reservada só à natureza divina, mas como se faz para a representação da cruz preciosa e vivificante, para os santos evangelhos e os outros objetos sagrados, honrando-os com a oferta de incenso e de luzes segundo o piedoso uso dos antigos. Pois “a honra prestada à imagem passa para o modelo original”, e quem venera a imagem venera a pessoa de quem nela é reproduzido.
             </p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium at sint minus enim dolorem, numquam aliquid eaque vitae quidem incidunt maxime. Laborum incidunt minima corrupti repudiandae provident possimus, nesciunt esse veniam pariatur dolor quo nam, quasi cum mollitia deserunt odit soluta atque? Asperiores, quidem beatae cumque nostrum magnam minus commodi?
+                *601 1 Basílio Magno, De Spiritu Sancto 18, n. 45 (B. Pruche [SouChr 17bis; Paris 19682] 40619s / PG 32, 149C); é o locus classicus da veneração das imagens sagradas
+            </p>
+            <p>
+                602. 	Assim se reforça o ensinamento dos nossos santos Padres, ou seja, a tradição da Igreja universal, que de um extremo ao outro da terra acolheu o Evangelho. Assim nos tornamos seguidores de Paulo que falou em Cristo [cf. 2Cor 2,17], do divino colégio apostólico e dos santos Padres, mantendo as tradições que temos recebido [cf. 2Ts 2,15]. Assim podemos cantar para a Igreja os hinos triunfais à maneira do profeta: “Alegra-te filha de Sião, exulta filha de Jerusalém; goza e regozija-te com todo o coração; o Senhor tirou de teu meio as iniquidades dos teus adversários, foste libertada das mãos dos teus inimigos. Deus é rei no teu meio, não mais verás o mal” [Sf 3,14s Septg.], e paz contigo para sempre!
+            </p>
+            <p>
+                603.   Aqueles, pois, que ousam pensar ou ensinar diversamente, ou, seguindo os ímpios hereges, violar as tradições da Igreja, ou inventar novidades, ou repelir alguma coisa do que foi confiado à Igreja, como o Evangelho, a imagem da cruz, uma imagem pintada ou uma santa relíquia de um mártir; ou transtornar com astúcia e engodo algo das legítimas tradições da Igreja universal ou usar para fins profanos os vasos sagrados ou os mosteiros santificados, nós decretamos que, se bispos ou clérigos, sejam depostos, se monges ou leigos, sejam excluídos da comunhão.
             </p>
         </article>
     </main>
@@ -41,6 +52,14 @@
                 itens.style.display = 'none'
             }   else {
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudou() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }   else {
+                itens.style.display = 'none'
             }
         }
     </script>
