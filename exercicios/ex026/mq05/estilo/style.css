@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+}
+
+body,
+html {
+    background-color: lightgray;
+}
+
+header {
+    background-color: rgb(170, 167, 167);
+    background-image: url(../imagens/ihs.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: top center;
+    padding-top: 13.7vh;
+}
+
+menu h1 {
+    padding: 10px;
+    text-align: right;
+}
+
+i#burg {
+    background-color: #FCB413;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+i#burg:hover {
+    font-weight: bold;
+    background-color: rgb(218, 106, 32);
+}
+
+menu {
+    display: none;
+}
+
+
+menu ul {
+    list-style-type: none;
+}
+
+menu>ul>li>a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #FCB413;
+    text-align: center;
+    color: white;
+    border: 1px solid rgb(154, 164, 174);
+}
+
+menu>ul>li>a:hover {
+    background-color: rgb(218, 106, 32);
+    font-weight: bold;
+}
+
+main {
+    background-color: #FFFFEE;
+    width: 70vw;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 0.1px solid orange;
+}
+
+article h2 {
+    padding-bottom: 13px
+}
+
+article p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 21px;
+}
