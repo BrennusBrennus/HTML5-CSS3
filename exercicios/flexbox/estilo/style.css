@@ -9,20 +9,33 @@
 .flexcont {
     background-color: yellow;
     display: flex;
-    flex-direction: row; /* eixo principal */
-    justify-content: flex-start; /* eixo principal */
-
-    align-items: stretch;
-
-    height: 50vh;
+    /* flex-direction: row; main axis */
+    justify-content: flex-start; /* main axis */
+    align-content: flex-start;
+    align-items: flex-start; /* cross axis */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap; /* direction e wrap */
+    height: 80vh;
     gap: 30px;
-    flex-wrap: wrap;
 }
 
 .flexitem {
     background-color: pink;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
-.flex-item:nth-child(1) {
-    height: 150px;
+.flexitem:nth-child(1) {
+
 }
+.flexitem:nth-child(2) {
+
+}
+.flexitem:nth-child(3) {
+
+}
+
+.flexitem:last-child {
+    flex-grow: 2;
+}
+
