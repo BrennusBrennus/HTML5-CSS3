@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flexcont {
+    background-color: yellow;
+    display: flex;
+    flex-direction: row; /* eixo principal */
+    justify-content: flex-start; /* eixo principal */
+
+    align-items: stretch;
+
+    height: 50vh;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.flexitem {
+    background-color: pink;
+}
+
+.flex-item:nth-child(1) {
+    height: 150px;
+}
